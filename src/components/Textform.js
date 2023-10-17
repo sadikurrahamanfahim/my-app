@@ -1,13 +1,13 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 
 export default function Textform(props) {
   const handleUpClick = () => {
-    let newText=text.toUpperCase();
+    let newText = text.toUpperCase();
     setText(newText)
   }
 
   const handleLowClick = () => {
-    let newText=text.toLowerCase();
+    let newText = text.toLowerCase();
     setText(newText)
   }
 
@@ -33,8 +33,6 @@ export default function Textform(props) {
         <p>Estimated time to read the text - {0.008 * text.split(" ").length} minutes</p>
         <h2>Preview</h2>
         <p>{text}</p>
-
-        <p>this is a test code</p>
       </div>
     </>
   )
