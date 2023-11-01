@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar title="TextUtils" about="About me" />
       {<div className="container my-3"><Textform heading="Enter the text to make UpperCase" /></div>}
-      <div className="container my-3"><About/></div>
+      <div className="container my-3"><About /></div>
     </>
   );
 }
