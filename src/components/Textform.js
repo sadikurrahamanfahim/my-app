@@ -17,7 +17,7 @@ export default function Textform(props) {
   const [text, setText] = useState("");
 
   const handleExtraspaces = () => {
-    let newText = text.split(/[]+/);
+    let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
   }
 
