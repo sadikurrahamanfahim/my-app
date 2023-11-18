@@ -16,6 +16,11 @@ export default function Textform(props) {
   }
   const [text, setText] = useState("");
 
+  const handleExtraspaces = () => {
+    let newText = text.split(/[]+/);
+    setText(newText.join(" "));
+  }
+
   return (
     <>
       <div className="container">
@@ -26,6 +31,7 @@ export default function Textform(props) {
         </div>
         <button className="btn btn-primary mx-2" onClick={handleUpClick} >Convert to Upper Case</button>
         <button className="btn btn-primary mx-3" onClick={handleLowClick} >Convert to Lower Case</button>
+        <button className="btn btn-primary mx-3" onClick={handleExtraspaces} >Handle Extra Spaces</button>
       </div>
       <div className="container my-3">
         <h1>Yor text summary</h1>
