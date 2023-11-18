@@ -11,7 +11,7 @@ export default function Textform(props) {
     setText(newText)
   }
 
-  const hnaleOnChange = (event) => {
+  const handleOnChange = (event) => {
     setText(event.target.value);
   }
   const [text, setText] = useState("");
@@ -26,7 +26,7 @@ export default function Textform(props) {
       <div className="container">
         <h1>{props.heading}</h1>
         <div className="mb-3">
-          <textarea className="form-control" value={text} onChange={hnaleOnChange} id="myBox" rows="5"></textarea>
+          <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="5"></textarea>
           <div className="form-text">Enter Text Inside the BOX</div>
         </div>
         <button className="btn btn-primary mx-2" onClick={handleUpClick} >Convert to Upper Case</button>
