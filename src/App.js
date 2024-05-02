@@ -11,7 +11,7 @@ function App() {
   const toggleMode = ()=>{
     if(mode==='light'){
       setMode ('dark');
-      document.body.style.backgroundColor='grey';
+      document.body.style.backgroundColor='black';
     }
     else{
       setMode('light');
@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <Navbar title="TextUtils" about="About me" mode={mode} toggleMode={toggleMode}/>
-      {<div className="container my-3"><Textform heading="Enter the text to make UpperCase" /></div>}
+      {<div className="container my-3"><Textform heading="Enter the text to make UpperCase" mode={mode} /></div>}
       <div className="container my-3"><About /></div>
     </>
   );
