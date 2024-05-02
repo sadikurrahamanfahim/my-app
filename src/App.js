@@ -3,8 +3,11 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import About from './components/About';
+import { useState } from 'react';
+import React, { useState } from 'react';
 
 function App() {
+  const[darkMode, setDarkMode] = useState('dark');//wheather dark mode is enbled or not
   return (
     <>
       <Navbar title="TextUtils" about="About me" />
